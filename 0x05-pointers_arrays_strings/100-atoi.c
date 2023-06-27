@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit_ _((unused));
+	int i, d, n, len, f, digit;
 
 	i = 0;
 	d = 0;
@@ -25,12 +25,14 @@ int _atoi(char *s)
 	while (i < len && f == 0)
 	{
 		if (s[i] == '_')
-			++d,
-			
-			if (s[i] >= '0' && s[i] <= '9');
+		{
+			++d;
+		}
+
+			if (s[i] >= '0' && s[i] <= '9')
 			{
 				digit = s[i] - '0';
-				if (d % 2)
+				if (d % 2 == 1)
 
 				digit = -digit;
 			n = n * 10 + digit;
