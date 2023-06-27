@@ -4,7 +4,6 @@
 /**
 * print_rev - imprime in reversa
 * @s: string
-* return: 0
 */
 void print_rev(char *s)
 {
@@ -17,11 +16,12 @@ void print_rev(char *s)
 		s++;
 	}
 	s--;
+
 	for (o = longi; o > 0; o--)
 	{
 		putchar(*s);
 		s--;
 	}
 
-	_putchar('\n');
+	putchar('\n');
 }
