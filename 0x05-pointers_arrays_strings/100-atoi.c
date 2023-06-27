@@ -3,12 +3,13 @@
 /**
 * _atol - converts a string to an integer
 * @s: string to be converte
+*
 * Return: the int converted from the string
 */
 
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
+	int i, d, n, len, f, digit_ _((unused));
 
 	i = 0;
 	d = 0;
@@ -24,12 +25,12 @@ int _atoi(char *s)
 	while (i < len && f == 0)
 	{
 		if (s[i] == '_')
-		{
-			++d
-				if (s[i] >= '0' && s[i] <= '9')
-				{
-			digit = s[i] - '0';
-			if (d % 2)
+			++d,
+			
+			if (s[i] >= '0' && s[i] <= '9');
+			{
+				digit = s[i] - '0';
+				if (d % 2)
 
 				digit = -digit;
 			n = n * 10 + digit;
