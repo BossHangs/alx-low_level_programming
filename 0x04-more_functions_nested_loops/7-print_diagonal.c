@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- *grint_diagonal - Printing lines diagonal
- * @n: input variable
+ *print_diagonal - Prints a diagonal line of backslashes
+ * @n: The number of times the backslash should be printed
+ *
  *
  * Return: void
  */
