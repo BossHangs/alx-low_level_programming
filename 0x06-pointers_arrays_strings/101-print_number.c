@@ -1,5 +1,6 @@
 #include "main.h"
-#include <stdio.h>
+#include "putchar.h"
+
 /**
 * print_number - print numbers chars
 * @n: integer params
@@ -8,17 +9,15 @@
 
 void print_number(int n)
 
-int _putchar(char c);
-
 {
 
 	unsigned int n1;
 
 	n1 = n;
-	if (n < 0)
 
+	if (n < 0)
 	{
-		putchar('_');
+		_putchar('-');
 
 		n1 = -n;
 	}
@@ -27,8 +26,6 @@ int _putchar(char c);
 
 	{
 		print_number(n1 / 10);
-
 	}
-
-	putchar((n1 % 10) + '0');
+	_putchar((n1 % 10) + '0');
 }
